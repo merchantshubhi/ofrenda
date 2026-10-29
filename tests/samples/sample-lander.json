@@ -1,0 +1,30 @@
+{
+  "id": "sample-lander",
+  "name": "Sample Lander",
+  "agency": "Example Space Agency (fictional)",
+  "tier": "resting",
+  "body": "moon",
+  "launched": "1999-01-02",
+  "arrived": "1999-01-05",
+  "ended": "1999-02-10",
+  "status": "Quiet on the surface since its mission ended.",
+  "purpose": "A made-up lander used only to test the schema. It is not a real machine.",
+  "discoveries": [
+    "Test fixture discovery one.",
+    "Test fixture discovery two."
+  ],
+  "how_it_worked": [
+    "Test fixture: it used a pretend camera to take pretend pictures."
+  ],
+  "last_contact": "1999-02-10",
+  "fun_fact": "This machine never existed, so it can never be wrong about anything real.",
+  "sources": [
+    {
+      "title": "Fictional source for tests",
+      "url": "https://example.org/sample-lander",
+      "accessed": "2026-01-01"
+    }
+  ],
+  "verified": true,
+  "verified_by": "test fixture (not a real verification)"
+}

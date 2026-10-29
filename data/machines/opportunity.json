@@ -1,0 +1,49 @@
+{
+  "id": "opportunity",
+  "name": "Opportunity",
+  "agency": "NASA (managed by the Jet Propulsion Laboratory)",
+  "tier": "resting",
+  "body": "mars",
+  "launched": "2003-07-07",
+  "arrived": "2004-01-24",
+  "ended": "2019-02-13",
+  "status": "Resting at Perseverance Valley on Mars. It stopped communicating during a planet-wide dust storm in June 2018, and NASA declared the mission over in February 2019.",
+  "purpose": "To search Mars for clues that liquid water once existed there. It landed on Meridiani Planum, where orbiting spacecraft had spotted a mineral that on Earth usually forms with liquid water.",
+  "discoveries": [
+    "It found tiny round pebbles nicknamed \"blueberries\" made of the mineral hematite, which formed when salty, acidic groundwater soaked the rocks.",
+    "It found layered sedimentary rocks that formed in ancient watery environments.",
+    "Its discoveries helped show that ancient Mars was wetter and possibly able to support life."
+  ],
+  "how_it_worked": [
+    "It was a solar-powered rover that rolled across the surface on wheels.",
+    "It landed by bouncing across the surface inside a cocoon of airbags before coming to rest.",
+    "It used a navigation camera to look at the ground ahead and to take pictures of its own tracks.",
+    "To save energy in winter, the team moved it from one sunny, energy-favorable spot on a sand ripple to another, a strategy they called \"hopping from lily pad to lily pad\"."
+  ],
+  "last_contact": "2018-06-10",
+  "fun_fact": "Opportunity was designed to last 90 Martian days, but it worked for almost 15 years, about 60 times longer than planned, and rolled more than 45 kilometers (28 miles).",
+  "sources": [
+    {
+      "title": "Taking a Look Back at Opportunity's Record-Setting Mission (NASA, Feb. 13, 2019)",
+      "url": "https://www.nasa.gov/image-article/taking-look-back-opportunitys-record-setting-mission/",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "July 7, 2003: NASA's Opportunity Rover Launches to Mars (NASA)",
+      "url": "https://www.nasa.gov/image-feature/july-7-2003-nasas-opportunity-rover-launches-to-mars",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Meridiani Planum (NASA Science)",
+      "url": "https://science.nasa.gov/resource/meridiani-planum-2/",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Slice of History: The Rover That Refused to Quit (NASA JPL)",
+      "url": "https://www.jpl.nasa.gov/images/slice-of-history-the-rover-that-refused-to-quit/",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "verified": true,
+  "verified_by": "shubhi"
+}

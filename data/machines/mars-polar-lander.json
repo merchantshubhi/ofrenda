@@ -1,0 +1,54 @@
+{
+  "id": "mars-polar-lander",
+  "name": "Mars Polar Lander",
+  "agency": "NASA (managed by the Jet Propulsion Laboratory)",
+  "tier": "lost",
+  "body": "mars",
+  "launched": "1999-01-03",
+  "arrived": null,
+  "ended": null,
+  "status": "Lost when it reached Mars on December 3, 1999. NASA listened for a signal for weeks, but none ever came.",
+  "purpose": "To set down near the edge of the south polar cap of Mars and dig for water ice with a robotic arm.",
+  "discoveries": [
+    "No science data ever came back, but a NASA review found the most probable cause of the loss: its descent engines likely shut off too early, after a false signal from its landing legs.",
+    "NASA's Mars Global Surveyor orbiter used its cameras to look for the lander, its parachute and its heat shield, but found nothing.",
+    "The lessons from the investigation led NASA to make changes to how it ran its Mars missions."
+  ],
+  "how_it_worked": [
+    "It was designed to land on its own using a parachute and rocket engines, without airbags.",
+    "It had a robotic arm with a scoop and a camera for digging into the ground and looking at the soil.",
+    "It carried a package of weather instruments, a stereo camera on a mast, and a gas analyzer to heat soil and look for water.",
+    "It carried two small probes called Deep Space 2, which were also lost on arrival."
+  ],
+  "last_contact": "1999-12-03",
+  "fun_fact": "It carried a tiny microphone built to record the first sounds ever heard on Mars.",
+  "sources": [
+    {
+      "title": "Mars Polar Lander / Deep Space 2 (NASA Mars Exploration Program, archived)",
+      "url": "https://webarchive.library.unt.edu/eot2008/20080925052348/http:/mars.jpl.nasa.gov/missions/past/polarlander.html",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Mars Polar Lander Mission Status, December 22, 1999 (NASA JPL, via SpaceRef)",
+      "url": "https://spaceref.com/?p=142619",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Mars Program Independent Assessment Team Report (NASA Technical Reports Server)",
+      "url": "https://ntrs.nasa.gov/citations/20000032458",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "NASA Reveals Probable Cause of Mars Polar Lander and Deep Space 2 Mission Failures (SpaceRef; needs a primary NASA/JPL source)",
+      "url": "https://spaceref.com/?p=24095",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Mars Polar Lander (SolarViews, citing NASA NSSDC; last telemetry, instruments and microphone; needs a primary NASA source)",
+      "url": "https://solarviews.com/eng/msur98.htm",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "verified": true,
+  "verified_by": "shubhi"
+}

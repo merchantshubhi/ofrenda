@@ -1,0 +1,8 @@
+pyproject.toml
+ghosts/schema.py
+ofrenda_of_the_machines.egg-info/PKG-INFO
+ofrenda_of_the_machines.egg-info/SOURCES.txt
+ofrenda_of_the_machines.egg-info/dependency_links.txt
+ofrenda_of_the_machines.egg-info/requires.txt
+ofrenda_of_the_machines.egg-info/top_level.txt
+tests/test_schema.py

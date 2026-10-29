@@ -1,0 +1,65 @@
+{
+  "id": "voyager-1",
+  "name": "Voyager 1",
+  "agency": "NASA (managed by the Jet Propulsion Laboratory)",
+  "tier": "restless",
+  "body": "deep space",
+  "launched": "1977-09-05",
+  "arrived": null,
+  "ended": null,
+  "status": "Still travelling through interstellar space, the space between the stars, and still sending data home to Earth. Over the years the team has turned off most of its instruments one by one to save power.",
+  "purpose": "It was launched to fly past Jupiter and Saturn. After that it kept going, and it became the first human-made object to cross into interstellar space.",
+  "discoveries": [
+    "In August 2012 it became the first spacecraft to leave the heliosphere, the bubble of particles and magnetic fields made by the Sun, and enter interstellar space.",
+    "It was the first spacecraft to measure the magnetic field and the density of the material in interstellar space.",
+    "It flew past Jupiter in 1979 and Saturn in 1980.",
+    "A picture of Earth taken by Voyager 1 inspired the \"Pale Blue Dot\" made famous by scientist Carl Sagan."
+  ],
+  "how_it_worked": [
+    "It launched on a Titan IIIE rocket from Florida in 1977, a few weeks after its twin, Voyager 2.",
+    "It took a faster route than Voyager 2 and overtook its twin on December 15, 1977.",
+    "As of NASA's April 17, 2026 instrument update, only two instruments were still on: the magnetometer and the plasma wave subsystem.",
+    "The other instruments were turned off over the years, either to save power or because they no longer worked well."
+  ],
+  "last_contact": null,
+  "fun_fact": "Voyager 1 carries a Golden Record: a 12-inch gold-plated copper disk with 115 images, sounds of nature like surf, wind, thunder, birds and whales, music, and spoken greetings in 55 languages.",
+  "sources": [
+    {
+      "title": "Voyager 1 (NASA Science)",
+      "url": "https://science.nasa.gov/voyager-1",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Where Are Voyager 1 and Voyager 2 Now? (NASA Science, instrument status updated April 17, 2026)",
+      "url": "https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Voyager fact sheet (NASA Science PDF)",
+      "url": "https://science.nasa.gov/wp-content/uploads/2023/05/Voyager.pdf",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "The Golden Record (NASA Science)",
+      "url": "https://science.nasa.gov/mission/voyager/voyager-golden-record-overview",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "What are the contents of the Golden Record? (NASA Science)",
+      "url": "https://science.nasa.gov/mission/voyager/golden-record-contents/",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Voyager spacecraft stars after 40 years (NASA release, via Phys.org)",
+      "url": "https://phys.org/news/2017-08-voyager-spacecraft-stars-years.html",
+      "accessed": "2026-10-29"
+    },
+    {
+      "title": "Voyager 1: a brief history of the interstellar spacecraft (BBC Science Focus; Jupiter and Saturn flyby years; needs a NASA source)",
+      "url": "https://www.sciencefocus.com/space/voyager-1-a-brief-history-of-the-interstellar-spacecraft",
+      "accessed": "2026-10-29"
+    }
+  ],
+  "verified": true,
+  "verified_by": "shubhi"
+}
