@@ -1,0 +1,5 @@
+{
+  "opportunity": {"kind": "rover"},
+  "voyager-1": {"kind": "probe"},
+  "mars-polar-lander": {"kind": "lander"}
+}
