@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "generator": {
+    "model": null
+  },
+  "machines": [
+    {
+      "id": "opportunity",
+      "name": "Opportunity",
+      "agency": "NASA (managed by the Jet Propulsion Laboratory)",
+      "tier": "resting",
+      "body": "mars",
+      "launched": "2003-07-07",
+      "arrived": "2004-01-24",
+      "ended": "2019-02-13",
+      "status": "Resting at Perseverance Valley on Mars. It stopped communicating during a planet-wide dust storm in June 2018, and NASA declared the mission over in February 2019.",
+      "purpose": "To search Mars for clues that liquid water once existed there. It landed on Meridiani Planum, where orbiting spacecraft had spotted a mineral that on Earth usually forms with liquid water.",
+      "discoveries": [
+        "It found tiny round pebbles nicknamed \"blueberries\" made of the mineral hematite, which formed when salty, acidic groundwater soaked the rocks.",
+        "It found layered sedimentary rocks that formed in ancient watery environments.",
+        "Its discoveries helped show that ancient Mars was wetter and possibly able to support life."
+      ],
+      "how_it_worked": [
+        "It was a solar-powered rover that rolled across the surface on wheels.",
+        "It landed by bouncing across the surface inside a cocoon of airbags before coming to rest.",
+        "It used a navigation camera to look at the ground ahead and to take pictures of its own tracks.",
+        "To save energy in winter, the team moved it from one sunny, energy-favorable spot on a sand ripple to another, a strategy they called \"hopping from lily pad to lily pad\"."
+      ],
+      "last_contact": "2018-06-10",
+      "fun_fact": "Opportunity was designed to last 90 Martian days, but it worked for almost 15 years, about 60 times longer than planned, and rolled more than 45 kilometers (28 miles).",
+      "sources": [
+        {
+          "title": "Taking a Look Back at Opportunity's Record-Setting Mission (NASA, Feb. 13, 2019)",
+          "url": "https://www.nasa.gov/image-article/taking-look-back-opportunitys-record-setting-mission/",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "July 7, 2003: NASA's Opportunity Rover Launches to Mars (NASA)",
+          "url": "https://www.nasa.gov/image-feature/july-7-2003-nasas-opportunity-rover-launches-to-mars",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "Meridiani Planum (NASA Science)",
+          "url": "https://science.nasa.gov/resource/meridiani-planum-2/",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "Slice of History: The Rover That Refused to Quit (NASA JPL)",
+          "url": "https://www.jpl.nasa.gov/images/slice-of-history-the-rover-that-refused-to-quit/",
+          "accessed": "2026-10-29"
+        }
+      ],
+      "verified": true,
+      "stories": {
+        "young": {
+          "text": "Opportunity is remembered here. Resting at Perseverance Valley on Mars. It found layered sedimentary rocks that formed in ancient watery environments. Its discoveries helped show that ancient Mars was wetter and possibly able to support life. We light a candle to remember Opportunity.",
+          "origin": "template"
+        },
+        "older": {
+          "text": "Opportunity is remembered here. Resting at Perseverance Valley on Mars. It stopped communicating during a planet-wide dust storm in June 2018, and NASA declared the mission over in February 2019. Its mission was to search Mars for clues that liquid water once existed there. It found tiny round pebbles nicknamed \"blueberries\" made of the mineral hematite, which formed when salty, acidic groundwater soaked the rocks. Opportunity was designed to last 90 Martian days, but it worked for almost 15 years, about 60 times longer than planned, and rolled more than 45 kilometers (28 miles). We light a candle to remember Opportunity.",
+          "origin": "template"
+        }
+      }
+    },
+    {
+      "id": "voyager-1",
+      "name": "Voyager 1",
+      "agency": "NASA (managed by the Jet Propulsion Laboratory)",
+      "tier": "restless",
+      "body": "deep space",
+      "launched": "1977-09-05",
+      "arrived": null,
+      "ended": null,
+      "status": "Still travelling through interstellar space, the space between the stars, and still sending data home to Earth. Over the years the team has turned off most of its instruments one by one to save power.",
+      "purpose": "It was launched to fly past Jupiter and Saturn. After that it kept going, and it became the first human-made object to cross into interstellar space.",
+      "discoveries": [
+        "In August 2012 it became the first spacecraft to leave the heliosphere, the bubble of particles and magnetic fields made by the Sun, and enter interstellar space.",
+        "It was the first spacecraft to measure the magnetic field and the density of the material in interstellar space.",
+        "It flew past Jupiter in 1979 and Saturn in 1980.",
+        "A picture of Earth taken by Voyager 1 inspired the \"Pale Blue Dot\" made famous by scientist Carl Sagan."
+      ],
+      "how_it_worked": [
+        "It launched on a Titan IIIE rocket from Florida in 1977, a few weeks after its twin, Voyager 2.",
+        "It took a faster route than Voyager 2 and overtook its twin on December 15, 1977.",
+        "As of NASA's April 17, 2026 instrument update, only two instruments were still on: the magnetometer and the plasma wave subsystem.",
+        "The other instruments were turned off over the years, either to save power or because they no longer worked well."
+      ],
+      "last_contact": null,
+      "fun_fact": "Voyager 1 carries a Golden Record: a 12-inch gold-plated copper disk with 115 images, sounds of nature like surf, wind, thunder, birds and whales, music, and spoken greetings in 55 languages.",
+      "sources": [
+        {
+          "title": "Voyager 1 (NASA Science)",
+          "url": "https://science.nasa.gov/voyager-1",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "Where Are Voyager 1 and Voyager 2 Now? (NASA Science, instrument status updated April 17, 2026)",
+          "url": "https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "Voyager fact sheet (NASA Science PDF)",
+          "url": "https://science.nasa.gov/wp-content/uploads/2023/05/Voyager.pdf",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "The Golden Record (NASA Science)",
+          "url": "https://science.nasa.gov/mission/voyager/voyager-golden-record-overview",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "What are the contents of the Golden Record? (NASA Science)",
+          "url": "https://science.nasa.gov/mission/voyager/golden-record-contents/",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "Voyager spacecraft stars after 40 years (NASA release, via Phys.org)",
+          "url": "https://phys.org/news/2017-08-voyager-spacecraft-stars-years.html",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "Voyager 1: a brief history of the interstellar spacecraft (BBC Science Focus; Jupiter and Saturn flyby years; needs a NASA source)",
+          "url": "https://www.sciencefocus.com/space/voyager-1-a-brief-history-of-the-interstellar-spacecraft",
+          "accessed": "2026-10-29"
+        }
+      ],
+      "verified": true,
+      "stories": {
+        "young": {
+          "text": "Voyager 1 is remembered here. Still travelling through interstellar space, the space between the stars, and still sending data home to Earth. It was the first spacecraft to measure the magnetic field and the density of the material in interstellar space. It flew past Jupiter in 1979 and Saturn in 1980. We light a candle to keep Voyager 1 company.",
+          "origin": "template"
+        },
+        "older": {
+          "text": "Voyager 1 is remembered here. Still travelling through interstellar space, the space between the stars, and still sending data home to Earth. Over the years the team has turned off most of its instruments one by one to save power. It was launched to fly past Jupiter and Saturn. In August 2012 it became the first spacecraft to leave the heliosphere, the bubble of particles and magnetic fields made by the Sun, and enter interstellar space. Voyager 1 carries a Golden Record: a 12-inch gold-plated copper disk with 115 images, sounds of nature like surf, wind, thunder, birds and whales, music, and spoken greetings in 55 languages. We light a candle to keep Voyager 1 company.",
+          "origin": "template"
+        }
+      }
+    },
+    {
+      "id": "mars-polar-lander",
+      "name": "Mars Polar Lander",
+      "agency": "NASA (managed by the Jet Propulsion Laboratory)",
+      "tier": "lost",
+      "body": "mars",
+      "launched": "1999-01-03",
+      "arrived": null,
+      "ended": null,
+      "status": "Lost when it reached Mars on December 3, 1999. NASA listened for a signal for weeks, but none ever came.",
+      "purpose": "To set down near the edge of the south polar cap of Mars and dig for water ice with a robotic arm.",
+      "discoveries": [
+        "No science data ever came back, but a NASA review found the most probable cause of the loss: its descent engines likely shut off too early, after a false signal from its landing legs.",
+        "NASA's Mars Global Surveyor orbiter used its cameras to look for the lander, its parachute and its heat shield, but found nothing.",
+        "The lessons from the investigation led NASA to make changes to how it ran its Mars missions."
+      ],
+      "how_it_worked": [
+        "It was designed to land on its own using a parachute and rocket engines, without airbags.",
+        "It had a robotic arm with a scoop and a camera for digging into the ground and looking at the soil.",
+        "It carried a package of weather instruments, a stereo camera on a mast, and a gas analyzer to heat soil and look for water.",
+        "It carried two small probes called Deep Space 2, which were also lost on arrival."
+      ],
+      "last_contact": "1999-12-03",
+      "fun_fact": "It carried a tiny microphone built to record the first sounds ever heard on Mars.",
+      "sources": [
+        {
+          "title": "Mars Polar Lander / Deep Space 2 (NASA Mars Exploration Program, archived)",
+          "url": "https://webarchive.library.unt.edu/eot2008/20080925052348/http:/mars.jpl.nasa.gov/missions/past/polarlander.html",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "Mars Polar Lander Mission Status, December 22, 1999 (NASA JPL, via SpaceRef)",
+          "url": "https://spaceref.com/?p=142619",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "Mars Program Independent Assessment Team Report (NASA Technical Reports Server)",
+          "url": "https://ntrs.nasa.gov/citations/20000032458",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "NASA Reveals Probable Cause of Mars Polar Lander and Deep Space 2 Mission Failures (SpaceRef; needs a primary NASA/JPL source)",
+          "url": "https://spaceref.com/?p=24095",
+          "accessed": "2026-10-29"
+        },
+        {
+          "title": "Mars Polar Lander (SolarViews, citing NASA NSSDC; last telemetry, instruments and microphone; needs a primary NASA source)",
+          "url": "https://solarviews.com/eng/msur98.htm",
+          "accessed": "2026-10-29"
+        }
+      ],
+      "verified": true,
+      "stories": {
+        "young": {
+          "text": "Mars Polar Lander is remembered here. Lost when it reached Mars on December 3, 1999. The lessons from the investigation led NASA to make changes to how it ran its Mars missions. It carried a tiny microphone built to record the first sounds ever heard on Mars. We light a candle so Mars Polar Lander is not forgotten.",
+          "origin": "template"
+        },
+        "older": {
+          "text": "Mars Polar Lander is remembered here. Lost when it reached Mars on December 3, 1999. NASA listened for a signal for weeks, but none ever came. Its mission was to set down near the edge of the south polar cap of Mars and dig for water ice with a robotic arm. No science data ever came back, but a NASA review found the most probable cause of the loss: its descent engines likely shut off too early, after a false signal from its landing legs. It carried a tiny microphone built to record the first sounds ever heard on Mars. We light a candle so Mars Polar Lander is not forgotten.",
+          "origin": "template"
+        }
+      }
+    }
+  ]
+}

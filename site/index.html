@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Ofrenda of the Machines</title>
+  <meta name="description" content="A floating altar that tells the stories of spacecraft left behind on the Moon, on Mars and in deep space.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the altar</a>
+
+  <header class="top">
+    <div class="title">
+      <h1>Ofrenda of the Machines</h1>
+      <p class="lede">Light a candle for the spacecraft we left behind. Choose a floating name to hear its story.</p>
+    </div>
+    <div class="views" role="group" aria-label="How to look at the altar">
+      <button id="view-3d" class="btn" type="button" aria-pressed="true">3D altar</button>
+      <button id="view-list" class="btn" type="button" aria-pressed="false">List</button>
+    </div>
+  </header>
+
+  <div id="banner" class="banner" role="status" hidden>
+    Preview: these stories are still being checked and may change.
+  </div>
+  <p id="notice" class="notice" role="status"></p>
+  <noscript><p class="notice">This altar needs JavaScript to show its stories.</p></noscript>
+
+  <main id="main">
+    <div id="stage" class="stage" role="group" aria-label="A floating 3D altar with three islands: the Resting, the Restless and the Lost. Each machine has a button above it.">
+      <canvas id="scene" aria-hidden="true"></canvas>
+      <div id="labels" class="labels"></div>
+    </div>
+    <p id="hint" class="hint">Drag to look around. Scroll or pinch to zoom. Choose a name to hear its story.</p>
+
+    <ul id="list" class="list" aria-label="The machines on the altar" hidden></ul>
+
+    <ul class="legend" aria-label="The three islands">
+      <li><span class="chip" data-tier="resting">The Resting</span> They finished their mission and went quiet. A job well done.</li>
+      <li><span class="chip" data-tier="restless">The Restless</span> Still travelling, still talking. Their candles keep burning.</li>
+      <li><span class="chip" data-tier="lost">The Lost</span> They went quiet before their story was finished. We remember them anyway.</li>
+    </ul>
+  </main>
+
+  <section id="card" class="card" role="dialog" aria-modal="false" aria-labelledby="card-title" hidden>
+    <div class="card-head">
+      <div>
+        <p id="card-tier" class="chip"></p>
+        <h2 id="card-title"></h2>
+        <p id="card-agency" class="agency"></p>
+      </div>
+      <button id="card-close" class="btn" type="button">Close</button>
+    </div>
+    <p id="card-verified" class="verified" hidden><span aria-hidden="true">&#10003;</span> Facts checked by a person against the sources below</p>
+
+    <section aria-labelledby="story-h">
+      <div class="story-head">
+        <h3 id="story-h">The ghost's story</h3>
+        <div class="levels" role="group" aria-label="Reading level">
+          <button id="lvl-young" class="btn" type="button" aria-pressed="true">Younger readers</button>
+          <button id="lvl-older" class="btn" type="button" aria-pressed="false">Older readers</button>
+        </div>
+      </div>
+      <p class="small">An imagined first-person story built only from the facts below. It is not a real transmission.</p>
+      <p id="card-voice" class="story"></p>
+      <p id="card-origin" class="small"></p>
+    </section>
+
+    <section aria-label="Facts about this machine">
+      <h3>What it was</h3>
+      <p id="card-purpose"></p>
+      <p id="card-status"></p>
+      <dl id="card-dates" class="dates"></dl>
+      <div id="card-found-block"><h3>What it found or did</h3><ul id="card-found"></ul></div>
+      <div id="card-how-block"><h3>How it worked</h3><ul id="card-how"></ul></div>
+      <div id="card-fun-block"><h3>A fun fact</h3><p id="card-fun"></p></div>
+    </section>
+
+    <section aria-labelledby="sources-h">
+      <h3 id="sources-h">Sources</h3>
+      <ul id="card-sources" class="sources"></ul>
+    </section>
+  </section>
+
+  <footer class="foot">
+    <p>Not affiliated with NASA.</p>
+    <p class="small">All art is original and drawn for this project. Everything runs on your device and makes no network requests.</p>
+  </footer>
+</body>
+</html>
