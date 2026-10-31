@@ -1,19 +1,26 @@
-.venv
-__pycache__
-.pytest_cache
-# Python
+# Python virtual environment
 .venv/
+venv/
+
+# Python cache
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
 
-# Environment and secrets
+# Build and test artifacts
+.coverage
+htmlcov/
+
+# Environment variables and secrets
 .env
 .env.*
 
-# Node
+# Node dependencies
 node_modules/
 
-# OS / editor
+# OS/editor files
 .DS_Store
 Thumbs.db
 .vscode/

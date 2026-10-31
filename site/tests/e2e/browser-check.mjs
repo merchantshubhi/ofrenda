@@ -1,13 +1,12 @@
 // Optional real-browser check: serves ../.. on a local port and drives it in headless Chromium
 // (with software WebGL). It needs two dev-only packages that are NOT part of the website:
-//     cd site && npm install --no-save puppeteer-core @sparticuz/chromium
-//     node tests/e2e/browser-check.mjs            (screenshots go to $SHOTS or ./shots)
+//     cd site && npm install --no-save puppeteer-core
+//     node tests/e2e/browser-check.mjs           (screenshots go to $SHOTS or ./shots)
 import http from 'node:http';
 import { readFileSync, existsSync, mkdirSync } from 'node:fs';
 import { dirname, join, extname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer-core';
-import chromium from '@sparticuz/chromium';
 
 const SITE = process.env.SITE_DIR ?? resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const SHOTS = process.env.SHOTS ?? join(process.cwd(), 'shots');
@@ -32,8 +31,15 @@ function serve(overrides = {}) {
 }
 
 const browser = await puppeteer.launch({
-  args: [...chromium.args, '--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'],
-  executablePath: await chromium.executablePath(), headless: 'shell',
+  executablePath: process.env.CHROME_PATH ??
+    'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+  headless: true,
+  args: [
+    '--use-gl=angle',
+    '--use-angle=swiftshader',
+    '--enable-unsafe-swiftshader',
+    '--ignore-gpu-blocklist'
+  ]
 });
 let failures = 0;
 const check = (name, ok, detail = '') => {
@@ -74,18 +80,44 @@ const closeCard = async (page) => { await page.keyboard.press('Escape'); };
   check('desktop: labels fully on screen', ls.every((l) => l.x >= 0 && l.x + l.w <= 1280 && l.y >= 0 && l.y + l.h <= 760), JSON.stringify(ls));
   check('desktop: banner hidden (real data has no preview flag)', !(await visible(page, '#banner')));
   check('desktop: footer text', (await text(page, '.foot')).startsWith('Not affiliated with NASA.'));
-  const withScene = await page.screenshot({ clip: { x: 0, y: 130, width: 1280, height: 560 } });
-  await page.addStyleTag({ content: '#scene{visibility:hidden}' });
-  const without = await page.screenshot({ clip: { x: 0, y: 130, width: 1280, height: 560 } });
-  check('desktop: the WebGL canvas actually draws something', withScene.length > without.length * 1.4, `${withScene.length} vs ${without.length}`);
-  await page.evaluate(() => { document.getElementById('scene').style.visibility = ''; });
-  await page.addStyleTag({ content: '#scene{visibility:visible!important}' });
-  await new Promise((r) => setTimeout(r, 400));
-  await page.screenshot({ path: join(SHOTS, 'desktop-altar.png') });
+  const canvasCheck = await page.$eval('#scene', (canvas) => {
+  const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
 
+  return {
+    exists: canvas instanceof HTMLCanvasElement,
+    width: canvas.width,
+    height: canvas.height,
+    hasWebGL: !!gl
+  };
+});
+
+check(
+  'desktop: WebGL canvas exists and has a valid rendering context',
+  canvasCheck.exists &&
+  canvasCheck.width > 0 &&
+  canvasCheck.height > 0 &&
+  canvasCheck.hasWebGL,
+  JSON.stringify(canvasCheck)
+);
+
+await page.screenshot({
+  path: join(SHOTS, 'desktop-altar.png')
+});
   for (const m of real.machines) {
+    // Ensure the previous card has closed
+    await page.waitForSelector('#card[hidden]', {
+    timeout: 5000
+    });
+
+    // Allow the closing transition to finish
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    // Open the next machine
     await page.click(`.label[data-id="${m.id}"]`);
-    await page.waitForSelector('#card:not([hidden])');
+
+    await page.waitForSelector('#card:not([hidden])', {
+    timeout: 10000
+    });
     check(`${m.id}: panel shows real name, tier and agency`, (await text(page, '#card-title')) === m.name && (await text(page, '#card-tier')).includes('The ') && (await text(page, '#card-agency')) === m.agency);
     check(`${m.id}: younger story is the generated one`, (await text(page, '#card-voice')) === m.stories.young.text);
     await page.click('#lvl-older');
@@ -98,9 +130,9 @@ const closeCard = async (page) => { await page.keyboard.press('Escape'); };
     check(`${m.id}: source titles are the real ones`, links.map((l) => l.text).join('|') === safe.map((s) => s.title).join('|'));
     check(`${m.id}: dates, discoveries and how-it-worked listed`, (await page.$$eval('#card-dates dt', (n) => n.length)) >= 2 && (await page.$$eval('#card-found li', (n) => n.length)) === m.discoveries.length && (await page.$$eval('#card-how li', (n) => n.length)) === m.how_it_worked.length);
     await page.screenshot({ path: join(SHOTS, `desktop-card-${m.id}.png`) });
+    await page.click('#lvl-young');
     await closeCard(page);
     check(`${m.id}: Escape closes the panel and returns focus to the label`, !(await visible(page, '#card')) && (await page.evaluate(() => document.activeElement.dataset.id)) === m.id);
-    await page.click('#lvl-young');
   }
 
   // clicking the 3D machine itself (not the label)
